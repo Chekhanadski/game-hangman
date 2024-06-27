@@ -1,0 +1,233 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-content {
+  display: flex;
+  justify-content: space-around;
+  width: 835px;
+  margin: 40px 20px 10px 20px;
+  border: 2px solid #000000;
+}
+
+.hangman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 20px;
+}
+
+.hangman__img {
+  position: relative;
+}
+
+.hangman__gallows {
+  max-width: 150px;
+}
+
+.hangman__head {
+  position: absolute;
+  left: 104px;
+  top: 60px;
+  max-width: 50px;
+  display: none;
+}
+
+.hangman__body {
+  position: absolute;
+  left: 127px;
+  top: 110px;
+  max-height: 65px;
+  display: none;
+}
+
+.hangman__hand-one {
+  position: absolute;
+  left: 106px;
+  top: 120px;
+  max-height: 27px;
+  display: none;
+}
+
+.hangman__hand-two {
+  position: absolute;
+  left: 128px;
+  top: 120px;
+  max-height: 27px;
+  display: none;
+}
+
+.hangman__leg-one {
+  position: absolute;
+  left: 106px;
+  top: 173px;
+  max-height: 27px;
+  display: none;
+}
+
+.hangman__leg-two {
+  position: absolute;
+  left: 128px;
+  top: 173px;
+  max-height: 27px;
+  display: none;
+}
+
+.hangman__name {
+  font-size: 25px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 20px;
+}
+
+.content__secret-word {
+  display: flex;
+}
+
+.content__secret-letter {
+  display: flex;
+  justify-content: center;
+  min-width: 30px;
+  margin-right: 10px;
+  font-size: 30px;
+  border-bottom: 2px solid #000000;
+}
+
+.content__keyboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  width: 350px;
+}
+
+.content__button-letter {
+  width: 37px;
+  height: 37px;
+}
+
+.modal-wrapper {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(60, 57, 49, 0.8);
+}
+
+.modal {
+  position: absolute;
+  width: 400px;
+  height: 220px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.modal__content {
+  text-align: center;
+  padding: 20px;
+}
+
+.modal__general-message {
+  padding: 20px;
+}
+
+.modal__secret-word {
+  padding: 20px;
+}
+
+.modal__button {
+  margin: 20px;
+}
+
+@media screen and (max-width: 620px) {
+  .wrapper-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20px 40px 20px;
+  }
+
+  .content__secret-word {
+    margin-bottom: 30px;
+  }
+
+  .hangman {
+    margin: 20px 20px 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 20px 40px 20px;
+  }
+
+  .content__secret-word {
+    margin-bottom: 30px;
+  }
+
+  .hangman {
+    margin-top: 20px;
+  }
+
+  .content__button-letter {
+    width: 30px;
+    height: 30px;
+  }
+
+  .content__keyboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    width: 300px;
+  }
+
+  .modal {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    margin: 0px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+
+  .wrapper-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    border: none;
+  }
+
+  .content__secret-letter {
+    min-width: 25px;
+    font-size: 25px;
+  }
+}
