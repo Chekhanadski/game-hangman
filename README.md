@@ -1,10 +1,10 @@
 # Welcome to the Hangman Game
 
-## Description
-The Hangman Game is a classic word guessing game where players attempt to uncover a hidden word by guessing one letter at a time. The game includes a visual representation of the gallows and updates dynamically with each guess. Users have six attempts to guess the word correctly before the game is over.
-
 ## View the Project
 You can view the deployed Hangman game here: [Hangman Game](https://rolling-scopes-school.github.io/chekhanadski-JSFE2023Q4/hangman/)
+
+## Description
+The Hangman Game is a classic word guessing game where players attempt to uncover a hidden word by guessing one letter at a time. The game includes a visual representation of the gallows and updates dynamically with each guess. Users have six attempts to guess the word correctly before the game is over.
 
 ## Features
 
